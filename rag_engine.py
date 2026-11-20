@@ -73,4 +73,4 @@ response = client.chat.completions.create(
   messages = [{"role" : "user",
                "content" : prompt}],
   temperature = 0.3,)
-return response.choices[0].message.content
+  return response.choices[0].message.content
