@@ -40,7 +40,7 @@ def load_base(pdf_path):
     chunks = create_chunks(full_text)
     index, embed_model = build_vectors(chunks)
     return index, embed_model, chunks
-def retrieve_content( question, embed_model,chunks,index,  num_chunks=3)
+def retrieve_content( question, embed_model,chunks,index,  num_chunks=3):
     if not question.strip():
         raise ValueError("Question cannot be blank")
     if num_chunks < 1:
