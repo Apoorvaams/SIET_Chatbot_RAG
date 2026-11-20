@@ -58,7 +58,7 @@ def load_base (pdf_path= "01_College_Information.pdf"):
         return background
 #ask
 def ask_rag (question, embed_model, chunks, index, api_key, num_chunks, model_name):
-key = api_key
+  key = api_key
 if not key:
   raise ValueError("API Key Missing")
   background = retieve_content(question, embed_model, chunks, index, api_key, num_chunks, model_name)
